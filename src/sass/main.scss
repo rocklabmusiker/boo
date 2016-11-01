@@ -1,0 +1,15 @@
+// global
+@import "global/global";
+@import "global/fonts";
+@import "global/libs";
+
+// mixins
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+
+// Sprites
+// @import "sprites/png-sprite" // To create png-sprite.sass run "gulp sprite";
+
+// blocks
+@import "blocks/header";
+@import "blocks/footer";
