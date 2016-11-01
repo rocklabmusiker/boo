@@ -28,8 +28,25 @@ npm install grunt-htmlcomb --save-dev
 npm install grunt-prettify --save-dev
 npm install grunt-sass --save-dev 
 npm install grunt-jsbeautifier --save-dev
+npm install css-longhand --save-dev
+npm install grunt-browser-sync --save-dev
+npm install grunt-concurrent --save-dev
+npm install grunt-contrib-csslint --save-dev
+npm install grunt-contrib-jshint --save-dev
+npm install grunt-critical --save-dev
+npm install grunt-force-task --save-dev
+npm install grunt-ftp-deploy --save-dev
+npm install grunt-html --save-dev
+npm install grunt-html-validation --save-dev
+npm install grunt-htmlhint --save-dev
+npm install grunt-reload --save-dev
+npm install grunt-unused --save-dev
+npm install grunt-w3c-validation --save-dev
 
 
+npm install critical --save
+npm install jshint-stylish --save
+npm install time-grunt --save
 
 
 bower install backstopjs
