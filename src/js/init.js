@@ -52,10 +52,9 @@ function initalize() {
     }("undefined" != typeof global ? global : this)
 
     loadCSS("css/main.css");
-    //console.log('css-append');
+   console.log('css-append');
 
 
-    //load_JS files
     ! function(e, t, n) {
         function r() {
             for (; u[0] && "loaded" == u[0][l];) o = u.shift(), o[f] = !a.parentNode.insertBefore(o, a)
@@ -65,10 +64,9 @@ function initalize() {
         "js/main.js"
     ]);
     console.log('js-append');
-
-
     // hide-loader
     document.getElementsByTagName('body')[0].className += ' pre-loaded';
     console.log('main-js.injected');
 
 }
+

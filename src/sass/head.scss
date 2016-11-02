@@ -1,0 +1,95 @@
+
+
+.header {
+    background-color: #fff;
+ 
+      
+    &__contact {
+        background-color: #F93E58;
+        height: 50px; 
+        width: 100%;
+        line-height: 50px;
+        color: #fff;
+        padding-left: 240px;
+    } 
+
+    &__m-wrap {
+        max-width: 1200px;
+        height: 100vh;
+        background-image: url(../images/desktop/header2.jpg);
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    &__logo {
+        display: inline-block;
+        
+    }
+
+    &__titel h1{
+        text-align: left;
+        font-size: 100px;
+        color: #1F7A68;
+        line-height: 85px;
+        padding: 110px 0 30px 200px;
+    }
+
+    &__titel h1 span{
+        padding-left: 105px;
+    }
+
+    &__titel h2{
+        text-align: left;
+        color: #FFA100;
+        font-size: 35px;
+        padding-left: 13px;
+    }
+
+    &__titel a {
+        display: block;
+        color: #FFA100;
+        width: 400px;
+        height: 40px;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        line-height: 35px;
+        border: 2px solid #1F7A68;
+        text-align: center;
+        margin: 33px 160px;
+    }
+
+    &__titel a:hover {
+        color: #1F7A68;
+        border: 2px solid #FFA100;
+        -webkit-transition: all .25s;
+           -moz-transition: all .25s;
+            -ms-transition: all .25s;
+             -o-transition: all .25s;
+                transition: all .25s;
+    }
+}
+
+
+.nav {
+    
+    &__list {
+        padding: 20px 0 0 20px;
+    }
+    
+    &__item {
+        display: inline-block;
+        padding: 15px;
+        color: #1F7A68;
+        font-size: 18px;
+    }
+
+    &__item:hover {
+        color: #F93E58;
+    }
+
+    &__item--active {
+        color: #F93E58;
+    }
+
+}

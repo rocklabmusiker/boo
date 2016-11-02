@@ -1,11 +1,10 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
-// @import "sprites/png-sprite"; 
-
-.footer {
+// @import "sprites/png-sprite";
+.why-we {
     
     &__wrap {
-        background-color: #FFCB73;
+        background-color: #FFA100;
         width: 100%;
         height: 100vh;
     }

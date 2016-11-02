@@ -1,5 +1,5 @@
 // global
-@import "global/global";
+@import "global/page";
 @import "global/fonts";
 @import "global/libs";
 
@@ -11,5 +11,12 @@
 // @import "sprites/png-sprite" // To create png-sprite.sass run "gulp sprite";
 
 // blocks
-@import "blocks/header";
+@import "blocks/skills";
+@import "blocks/testimonials";
+@import "blocks/why-we";
+@import "blocks/gallery";
+@import "blocks/price";
+@import "blocks/project-start";
+@import "blocks/project-business";
+@import "blocks/project-person";
 @import "blocks/footer";
