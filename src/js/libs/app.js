@@ -35,4 +35,12 @@ if (isMobile != true) {
   });
 }
 
+// fancy box
 
+$("a#single_image").fancybox();
+
+
+//lazy  
+$(function() {
+    $("img.lazy").lazyload();
+});
