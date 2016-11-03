@@ -13,5 +13,78 @@
     &__m-wrap {
         max-width: 1200px;
         height: 100vh;
+        
+        h3 {
+        	color: #1F7A68;
+        	font-size: 50px;
+        	padding-top: 35px;
+        }
+
+        h3::after {
+        	content: " ";
+        	display: block;
+        	width: 100%;
+        	height: 2px;
+        	background-color: #1F7A68;
+        	margin-top: 50px;
+        }
+    }
+
+    &__form {
+    	margin: 50px 0 0 0;
+    	
+    	input[type="text"] {
+    		display: block;
+    		width: 100%;
+    		height: 50px;
+    		margin: 20px 0;
+    		background-color: transparent;
+    		border: 2px solid #1F7A68;
+    		padding-left: 10px;
+    	}
+
+    	textarea {
+    		display: block;
+    		width: 100%;
+    		height: 200px;
+    		margin: 20px 0;
+    		background-color: transparent;
+    		border: 2px solid #1F7A68;
+  			padding: 10px;
+    	}
+
+    	p {
+    		padding: 10px 0;
+    		font-size: 20px;
+    		color: #1F7A68;
+    	}
+
+    	span{
+    		display: block;
+    		margin: -20px 0 10px 20px;
+    		color: #1F7A68;
+    	}
+
+    	a {
+    		background-color: #f93e58;
+		    border-radius: 15px;
+		    color: #fff;
+		    height: 35px;
+		    line-height: 31px;
+		    margin: 20px 0;
+		    width: 150px;
+		    display: block;
+		    text-align: center;
+    	}
+
+    	a:hover {
+    		background-color: #fff;
+		    color: #f93e58;
+		    -webkit-transition: all .30s;
+		       -moz-transition: all .30s;
+		        -ms-transition: all .30s;
+		         -o-transition: all .30s;
+		            transition: all .30s;
+    	}
     }
 }
