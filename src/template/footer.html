@@ -2,18 +2,29 @@
 	 	<div class="wrap footer__wrap">
 	 		<div class="m-wrap footer__m-wrap">
 	 			<h3>Получить бесплатный расчёт стоимости</h3>
-	 			<form class="footer__form">
-	 				<input type="text" placeholder="Ваше имя">
-	 				<input type="text" placeholder="Ваш email">
-	 				<input type="text" placeholder="Ваш телефон">
+	 			<form class="footer__form form" action="ajax/mail.php" method="post">
+	 				<input type="text" name="name" placeholder="Ваше имя">
+	 				<input type="text" name="email" placeholder="Ваш email">
+	 				<input type="text" name="phone" placeholder="Ваш телефон">
+	 				<input type="hidden" name="frmid" value="Форма в первом блоке">
 	 				<p>Тип сайта</p>
 	 				<input type="checkbox" name="space" value="1"> <span>Старт</span>
 	 				<input type="checkbox" name="space" value="2"> <span>Свой бизнес</span>
 	 				<input type="checkbox" name="space" value="3"> <span>Индивидуальный</span>
 	 				<input type="checkbox" name="space" value="4"> <span>Решу после консультации</span>
 					<textarea placeholder="Ваше сообщение"></textarea>
-					<a href="#">отправить</a>
+					<button href="#" type="submit">отправить</button>
 	 			</form>
 	 		</div>
 	 	</div>
 	</section>
+	<a href="#" class="back-to-top">Back to Top</a>
+	
+	<!-- pop up -->
+	<div id="hidden-box">
+	    <div id="form-error-pop">
+		<div id="form-error-text"></div>
+	    </div>
+	    <div id="okgo">Спасибо за заявку</div>	
+	</div>
+	

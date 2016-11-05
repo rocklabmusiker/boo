@@ -5,7 +5,7 @@
 .footer {
     
     &__wrap {
-        background-color: #FFCB73;
+        background-color: #FFA100;
         width: 100%;
         height: 100vh;
     }
@@ -35,49 +35,56 @@
     	
     	input[type="text"] {
     		display: block;
-    		width: 100%;
+    		width: 96%;
     		height: 50px;
-    		margin: 20px 0;
+    		margin: 20px auto;
     		background-color: transparent;
     		border: 2px solid #1F7A68;
     		padding-left: 10px;
     	}
 
+        input[type="checkbox"] {
+            display: block;
+            margin: 0 20px;
+            
+        }
+
     	textarea {
     		display: block;
-    		width: 100%;
+    		width: 96%;
     		height: 200px;
-    		margin: 20px 0;
+    		margin: 20px auto;
     		background-color: transparent;
     		border: 2px solid #1F7A68;
   			padding: 10px;
     	}
 
     	p {
-    		padding: 10px 0;
+    		padding: 10px 20px;
     		font-size: 20px;
     		color: #1F7A68;
     	}
 
     	span{
     		display: block;
-    		margin: -20px 0 10px 20px;
+    		margin: -16px 0 11px 40px;
     		color: #1F7A68;
     	}
 
-    	a {
+    	button {
     		background-color: #f93e58;
 		    border-radius: 15px;
 		    color: #fff;
-		    height: 35px;
-		    line-height: 31px;
-		    margin: 20px 0;
+		    height: 40px;
+		    line-height: 0;
+		    margin: 20px 17px;
 		    width: 150px;
 		    display: block;
 		    text-align: center;
+            border: none;
     	}
 
-    	a:hover {
+    	button:hover {
     		background-color: #fff;
 		    color: #f93e58;
 		    -webkit-transition: all .30s;

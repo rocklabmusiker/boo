@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     cssmin = require('gulp-cssmin'),
+    cleanCSS = require('gulp-clean-css'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
@@ -75,6 +76,7 @@ gulp.task('style:build', function () {
         .pipe(sourcemaps.init())
         .pipe(sass({errLogToConsole: true}))
         .pipe(prefixer())
+        .pipe(cleanCSS())
         .pipe(cssmin())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))
@@ -167,9 +169,3 @@ gulp.task('watch', function () {
 gulp.task('start', ['build', 'browser-sync', 'watch']);
 
 
-/*task to test css*/
-gulp.task('my-css', function() {
-    return gulp.src('src/sass/main.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('src/'));
-});

@@ -104,3 +104,18 @@
     	
     }
 }
+
+@include max_1200 {
+    
+    .price {
+
+
+        &__item {
+            max-width: 300px;
+            min-width: 300px;
+            margin: 100px 10px;
+        }
+    }
+
+
+}

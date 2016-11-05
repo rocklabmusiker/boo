@@ -1,12 +1,27 @@
 @import "mixins/base-mixins";
 @import "mixins/media-mixins";
 // @import "sprites/png-sprite";
+
+section.module.parallax{
+ 
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.parallax-1{
+    height: 100vh;
+    background-image: url(../images/desktop/webdesign-paralax.jpg);
+}
+
+
+
 .skills {
 		max-width: 1200px;
-	    height: 100vh;
-	    background-image: url(../images/desktop/webdesign-paralax.jpg);
-	    background-position: 50% 0;
-	    background-repeat: no-repeat;
 	    width: 100%;
 	    
 	&__m-wrap {
