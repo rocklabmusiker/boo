@@ -4,8 +4,8 @@
 	}
 }
 
-@mixin max_980 {
-	@media only screen and(max-width: 980px){
+@mixin max_1000 {
+	@media only screen and(max-width: 1000px){
 		@content;
 	}
 }
@@ -16,8 +16,16 @@
 	}
 }
 
-@mixin max_480 {
-	@media only screen and(max-width: 480px){
+
+@mixin max_515 {
+	@media only screen and(max-width: 515px){
+		@content;
+	}
+}
+
+
+@mixin max_499 {
+	@media only screen and(max-width: 499px){
 		@content;
 	}
 }

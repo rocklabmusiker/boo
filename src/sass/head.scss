@@ -1,4 +1,6 @@
-
+@import "mixins/base-mixins";
+@import "mixins/media-mixins";
+// @import "sprites/png-sprite";
 
 .header {
     background-color: #fff;
@@ -92,4 +94,221 @@
         color: #F93E58;
     }
 
+}
+
+
+
+@include max_1200 {
+    .header {
+
+        &__m-wrap {
+            height: 900px;
+         }
+
+        &__titel h1 {
+            font-size: 80px;
+            line-height: 75px;
+            padding: 110px 0 30px 278px;
+        }
+
+        &__titel h1 span {
+            padding-left: 84px;
+        }
+
+        &__titel h2 {
+            font-size: 30px;
+            padding-left: 100px;
+        }
+
+        &__titel a {
+            margin: 33px 168px;
+        }
+    }
+
+   
+}
+
+
+@include max_1000 {
+    .header {
+        height: auto;
+        
+        &__m-wrap {
+            height: 135%;
+            padding: 0 0 208px;
+        }
+        
+        &__contact {
+            padding-left: 20px;
+        }
+
+
+        &__titel h1 {
+            font-size: 70px;
+            line-height: 60px;
+            padding: 110px 0 30px 210px;
+        }
+
+        &__titel h1 span {
+            padding-left: 72px;
+        }
+
+        &__titel h2 {
+            font-size: 25px;
+            padding-left: 70px;
+        }
+
+        &__titel a {
+            margin: 61px 0 0 110px;
+            width: 350px;
+        }
+
+        .nav {
+      position: relative;
+    
+      &__list {
+        padding: 20px 0 0 20px;
+        background-color: #fff;
+        position: relative;
+        display: block;
+      }
+    
+      &__item {
+        display: block;
+        padding: 15px;
+        color: #1F7A68;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      &__item:hover {
+        color: #F93E58;
+      }
+  
+      &__item a {
+        text-decoration: none;
+      }
+
+      &__item--active {
+        color: #F93E58;
+      }
+
+      &__button {
+        width: 40px;
+        height: 40px;
+        left: 50px;
+        top:20px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 1000;
+        display: block;
+      }
+
+      &__button span:nth-of-type(1)::after {
+        content: ' ';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #1F7A68;
+        margin-bottom: 5px;
+        position: relative;
+      }
+      
+      &__button span:nth-of-type(2)::after {
+        content: ' ';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #1F7A68;
+        margin-bottom: 5px;
+        position: relative;
+      }
+      
+      &__button span:nth-of-type(3)::after {
+        content: ' ';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #1F7A68;
+        margin-bottom: 5px;
+        position: relative;
+         
+      }
+
+}
+    }
+
+@include max_600 {
+    .header {
+
+         &__contact {
+            padding-left: 20px;
+            font-size: 16px;
+        }
+
+        &__titel h1 {
+            font-size: 60px;
+            line-height: 55px;
+            text-align: center;
+            padding: 110px 0 30px 0;
+        }
+
+        &__titel h1 span {
+            text-align: center;
+            padding: 0;
+        }
+
+        &__titel h2 {
+            font-size: 25px;
+            text-align: center;
+            padding: 0;
+        }
+
+        &__titel a {
+            margin: 61px auto;
+            width: 92%;
+            
+        }
+    }
+    
+}  
+
+@include max_499 {
+    .header {
+
+        &__contact {
+            padding: 0;
+            text-align: center;
+            font-size: 14px;
+            height: 60px;
+            line-height: 25px;
+        }
+
+        &__m-wrap {
+            padding: 0 0 108px;
+        }
+
+        &__titel h1 {
+            font-size: 50px;
+            line-height: 55px;
+        }
+
+    }
+    
+}    
+
+    .nav__list{
+        display: none;  
+    }
+        
+    
+   
+}
+
+div {
+    -webkit-transform: translate3d(45);
+       -moz-transform: translate3d(45);
+        -ms-transform: translate3d(45);
+         -o-transform: translate3d(45);
+            transform: translate3d(45);
 }

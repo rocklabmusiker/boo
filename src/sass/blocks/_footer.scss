@@ -95,3 +95,67 @@
     	}
     }
 }
+
+@include max_1200 {
+    
+    .footer {
+        height: auto;
+
+        
+        &__wrap {
+            height: auto;
+        }
+
+        &__m-wrap {
+            height: auto;
+            padding: 0 0 30px;
+             h3 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+//media
+@include max_1000 {
+    .footer {
+        height: auto;
+        
+        &__wrap {
+            height: auto;
+        }
+
+        &__m-wrap {
+            height: auto;
+            
+            h3 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@include max_600 {
+    .footer {
+      
+        &__m-wrap {
+            
+            h3 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+
+@include max_499 {
+    .footer {
+      
+        &__m-wrap {
+            
+            h3 {
+                font-size: 25px;
+            }
+        }
+    }
+}

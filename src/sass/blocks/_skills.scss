@@ -23,16 +23,18 @@ section.module.parallax{
 .skills {
 		max-width: 1200px;
 	    width: 100%;
+        height: 100vh;
 	    
 	&__m-wrap {
-        max-width: 1200px;
+        /* max-width: 1200px; */
         height: 100vh;
     }
     
     &__top {
         background-color: #FFA100; 
 	    width: 100%;
-	    height: 300px;
+	    height: auto;
+        padding: 0 0 60px;
     }
 
     &__list {
@@ -44,11 +46,15 @@ section.module.parallax{
 	            justify-content: space-around;
 	    -webkit-align-items: center;
 	            align-items: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
     }
 
     &__block {
-    	margin: 0 25px;
+    	margin: 20px 25px 0;
     	cursor: pointer;
+        position: relative;
     }
 
      &__block:hover .skills__back {
@@ -145,3 +151,91 @@ section.module.parallax{
 
 }
 
+/* media */
+
+@include max_1200 {
+    .parallax-1{
+        height: 80vh;
+    }
+
+    .skills {
+        &__testimonials {
+                font-size: 40px;
+                margin: 50px 0;
+            
+            span {
+                font-size: 25px;
+                height: 100px;
+                width: 100px;
+                line-height: 100px;
+                margin: 20px auto 0;
+            }
+        }
+    }
+}
+
+@include max_1000 {
+    .parallax-1{
+        height: 105vh;
+    }
+
+    .skills {
+        &__testimonials {
+                font-size: 32px;
+                margin: 40px 0;
+            
+            span {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@include max_600 {
+    .parallax-1{
+        height: 103vh;
+    }
+
+    .skills {
+        &__testimonials {
+                font-size: 28px;
+                margin: 30px 0;
+            
+            span {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@include max_515 {
+    .parallax-1{
+        height: 105vh;
+    }
+    .skills{
+        &__testimonials {
+                font-size: 24px;
+                margin: 25px 0;
+        }
+    }
+}
+
+
+@include max_499 {
+    .parallax-1{
+        height: 162vh;
+    }
+
+    .skills {
+
+        &__top {
+            height: 1120px;
+        }
+
+        &__testimonials {
+                font-size: 18px;
+                margin: 20px 0;
+            
+        }
+    }
+}
