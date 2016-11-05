@@ -41,7 +41,7 @@ if (isMobile != true) {
 
 // fancy box
 
-$("a#single_image").fancybox();
+$("a.single_image").fancybox();
 
 
 //lazy  
