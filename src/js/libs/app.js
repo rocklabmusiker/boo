@@ -1,4 +1,6 @@
-
+// hide-loader
+    document.getElementsByTagName('body')[0].className += ' pre-loaded';
+    console.log('main-js.injected');
 
 // device detection
 var isMobile = false;
