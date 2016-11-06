@@ -11,6 +11,7 @@ section.module.parallax{
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      z-index: 1;
 }
 
 .parallax-1{
@@ -176,7 +177,7 @@ section.module.parallax{
 
 @include max_1000 {
     .parallax-1{
-        height: 105vh;
+        height: 950px;
     }
 
     .skills {
@@ -193,7 +194,7 @@ section.module.parallax{
 
 @include max_600 {
     .parallax-1{
-        height: 103vh;
+        height: 950px;
     }
 
     .skills {
@@ -210,7 +211,7 @@ section.module.parallax{
 
 @include max_515 {
     .parallax-1{
-        height: 105vh;
+        height: 950px;
     }
     .skills{
         &__testimonials {
@@ -223,7 +224,7 @@ section.module.parallax{
 
 @include max_499 {
     .parallax-1{
-        height: 162vh;
+        height: 1360px;
     }
 
     .skills {
